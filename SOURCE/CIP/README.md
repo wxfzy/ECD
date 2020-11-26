@@ -1,2 +1,2 @@
 # COMMON INDUSTRIAL PROTOCOL (CIP)
-EthernetIP CIP Device
+This folder will be home to the CIP layer of the stack.
