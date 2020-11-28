@@ -1,6 +1,6 @@
 # 0x05 Communication Object Class
 Flow Chart
-
+<pre>
 +----------------------------------+
 |Communication_Objects_Controller.c|
 +---+------------------------------+
@@ -54,4 +54,4 @@ Flow Chart
           +-+---------------------------------+
           |Link_Producer Instance_Controller.c|
           +-----------------------------------+
-
+</pre>
