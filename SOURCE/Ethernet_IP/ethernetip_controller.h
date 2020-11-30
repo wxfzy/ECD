@@ -1,8 +1,0 @@
-//
-// Created by wbrum on 11/26/2020.
-//
-
-#ifndef ECD_ETHERNETIP_CONTROLLER_H
-#define ECD_ETHERNETIP_CONTROLLER_H
-
-#endif //ECD_ETHERNETIP_CONTROLLER_H
