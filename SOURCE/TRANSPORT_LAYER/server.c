@@ -2,14 +2,22 @@
 // Created by william on 12/17/20.
 //
 
+#include <stdio.h>
 #include "server.h"
 #include <sys/socket.h>
 #include <sys/epoll.h>
+#include <netinet/in.h>
 
-/*--------- Socket Configuration Options --------*/
-static int const DOMAIN = AF_INET;         // The domain argument specifies a communication domain.
-static int const TYPE = SOCK_STREAM;       // Specifies the communication semantics.
-static int const PROTOCOL = 6;             // Specifies a particular protocol to be used with the socket.
+// ----------------- Socket Configuration Options
+#define DOMAIN AF_INET         // The domain argument specifies a communication domain.
+#define TYPE SOCK_STREAM       // Specifies the communication semantics.
+#define PROTOCOL 6             // Specifies a particular protocol to be used with the socket.
+// ----------------- Transport and Port Options
+struct sockaddr_in ADDRESS = {
+	.sin_family = DOMAIN,
+	.sin_port = htons(0xAF12),
+	.sin_addr.s_addr = INADDR_ANY,
+};
 
 // int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
 // int connect(int sockfd, const struct sockaddr *addr, socklen_t addrlen);
@@ -22,24 +30,12 @@ static int const PROTOCOL = 6;             // Specifies a particular protocol to
 // recv(2), recvfrom(2), recvmsg(2)
 // int close(int fd);
 
-/*
- * 1. Initialize variables.
- * 2. Create master socket.
- * 3. Bind.
- * 4. Listen.
- * 5. Initialize and fill readfds.
- * 6. Select.
- * 7. Accept the connection.
- * 8. Service the client requests.
- * 9. Close the connection.
- * 10 .
- */
+int main(){
+	// Create the tcp socket.
+	int tcp_socket = socket(DOMAIN, TYPE, PROTOCOL);
+	// Assign an address to the tcp socket.
+	bind(tcp_socket, (struct sockaddr*)&ADDRESS, sizeof(ADDRESS));
 
-int server_controller(){
-    return 0;
+	printf("The program has completed\n");
+	return 0;
 }
-
-
-epoll_create1(2)
-epoll_ctl(2)
-epoll_wait(2)
