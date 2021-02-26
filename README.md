@@ -1,5 +1,4 @@
 # EtherNet/IP CIP Device (ECD)
-EthernetIP CIP Device
 
 ### Project Ambition
 An API that could be used to create, configure, and interface with programmable logical controllers as an EtherNEt/IP, CIP, client device.
