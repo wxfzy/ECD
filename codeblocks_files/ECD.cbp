@@ -31,9 +31,41 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.c">
+		<Unit filename="../src/01_sockets/_sockets_controller.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="../src/01_sockets/_sockets_controller.h" />
+		<Unit filename="../src/02_serializer/_serial_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/02_serializer/_serial_controller.h" />
+		<Unit filename="../src/03_ethernet_ip/_eip_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/03_ethernet_ip/_eip_controller.h" />
+		<Unit filename="../src/04_common_industrial_protocol/_cip_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/_cip_controller.h" />
+		<Unit filename="../src/04_common_industrial_protocol/object_library.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/05_system/_system_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/05_system/_system_controller.h" />
+		<Unit filename="../src/05_system/data_types.h" />
+		<Unit filename="../src/06_api/_api_controller.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/06_api/_api_controller.h" />
+		<Unit filename="../src/07_main_controller/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/_temporary_working_directory/tcp_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/_temporary_working_directory/tcp_server.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
