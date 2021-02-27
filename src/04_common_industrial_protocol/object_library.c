@@ -1,12 +1,8 @@
+#include <../05_system/data_types.h>
 
-struct cip_class_attributes {
-    uint
-    uint
-    
-    
-};
 
-struct cip_object {
+struct cip_obj_identity {
+    description[];
     class_code;
     class_attributes;
     instance_attributes;
@@ -16,8 +12,9 @@ struct cip_object {
     behavior;
 };
 
-int identity_object;
-// 2 max instance
+/*
+
+To Do:
 int message_router_object;
 int device_net_object;
 int assembly_object;
@@ -80,3 +77,4 @@ int tcpip_interface_object;
 int ethernet_link_object;
 int componet_link_object;
 int componet_repeater_object;
+*/
