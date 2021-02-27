@@ -47,7 +47,25 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../src/04_common_industrial_protocol/_cip_controller.h" />
-		<Unit filename="../src/04_common_industrial_protocol/object_library.c">
+		<Unit filename="../src/04_common_industrial_protocol/common_services.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_connection_manager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_ethernet_link.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_identity.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_message_router.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_tcp_ip_interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../src/04_common_industrial_protocol/obj_unconnected_message_manager.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../src/05_system/_system_controller.c">
@@ -66,9 +84,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../src/_temporary_working_directory/tcp_server.h" />
-		<Extensions>
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
