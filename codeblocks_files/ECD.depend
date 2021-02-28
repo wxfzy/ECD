@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1614535261 source:/home/william/Desktop/ECD/ECD/src/01_sockets/_sockets_controller.c
+
+1614533344 source:/home/william/Desktop/ECD/ECD/src/02_serializer/_serial_controller.c
+
+1614533307 source:/home/william/Desktop/ECD/ECD/src/03_ethernet_ip/_eip_controller.c
+
+1614533460 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/_cip_controller.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/common_services.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_connection_manager.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_ethernet_link.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_identity.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_message_router.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_tcp_ip_interface.c
+
+1614522454 source:/home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/obj_unconnected_message_manager.c
+
+1614534615 source:/home/william/Desktop/ECD/ECD/src/01_sockets/tcp_server.c
+	<stdio.h>
+	<poll.h>
+	<sys/epoll.h>
+	<signal.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<limits.h>
+	<errno.h>
+
+1614522454 /home/william/Desktop/ECD/ECD/src/01_sockets/tcp_server.h
+
+1614533295 source:/home/william/Desktop/ECD/ECD/src/05_system/_system_controller.c
+
+1614535354 source:/home/william/Desktop/ECD/ECD/src/06_api/_api_controller.c
+
+1614536893 source:/home/william/Desktop/ECD/ECD/src/07_main_controller/main.c
+	<stdio.h>
+	"../01_sockets/_sockets_controller.h"
+	"../02_serializer/_serial_controller.h"
+	"../03_ethernet_ip/_eip_controller.h"
+	"../04_common_industrial_protocol/_cip_controller.h"
+	"../05_system/_system_controller.h"
+	"../06_api/_api_controller.h"
+
+1614537058 /home/william/Desktop/ECD/ECD/src/01_sockets/_sockets_controller.h
+
+1614537034 /home/william/Desktop/ECD/ECD/src/02_serializer/_serial_controller.h
+
+1614537014 /home/william/Desktop/ECD/ECD/src/03_ethernet_ip/_eip_controller.h
+
+1614536990 /home/william/Desktop/ECD/ECD/src/04_common_industrial_protocol/_cip_controller.h
+
+1614536970 /home/william/Desktop/ECD/ECD/src/05_system/_system_controller.h
+
+1614536938 /home/william/Desktop/ECD/ECD/src/06_api/_api_controller.h
+

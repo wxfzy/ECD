@@ -2,7 +2,6 @@
 #include <poll.h>
 #include <sys/epoll.h>
 #include <signal.h>
-#include "tcp_server.h"
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <limits.h>
@@ -17,7 +16,7 @@
 #define MAXLINE 4096 // Max text line length.
 #define INFTIM (-1) //  Infinite poll timeout.
 
-int main (){
+int test (){
     int i;  // Used as an iterator.
     int maxi = 0;   // Contains the largest index of the client array currently in use.
     int listenfd; //
@@ -56,7 +55,7 @@ int main (){
 
     // Begin the infinite loop.
     for ( ;; ){
-        
+
         // Get the number of fds that currently have an event.
         nready = poll(client, maxi + 1, INFTIM);
 
@@ -75,10 +74,10 @@ int main (){
                     client[i].fd = connfd;
                     break;
                 }
-            
+
             // If we have reached the end of our array quit on error.
             if (i == FOPEN_MAX)
-                err_quit("Too many clients");
+                perror("Too many clients");
             client[i].events = POLLIN;
 
             // Add current client to variable storing amount of clients.
@@ -111,13 +110,13 @@ int main (){
 
                     // Log all other errors as read error.
                     } else
-                        err_sys("Read error");
+                        perror("Read error");
 
                 // If zero bytes have been read, close the socket, and set fds as available.
                 } else if (n == 0) {
                     close(sockfd);
                     client[i].fd = -1;
-                
+
                 // Echo data back to client.
                 } else
                     write(sockfd, buf, n);

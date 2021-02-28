@@ -35,6 +35,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../src/01_sockets/_sockets_controller.h" />
+		<Unit filename="../src/01_sockets/tcp_server.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="../src/02_serializer/_serial_controller.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -78,9 +81,6 @@
 		</Unit>
 		<Unit filename="../src/06_api/_api_controller.h" />
 		<Unit filename="../src/07_main_controller/main.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../src/_temporary_working_directory/tcp_server.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="../src/_temporary_working_directory/tcp_server.h" />
